@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Added shadow */
+}
+
+.hero-content {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    max-width: 600px;
+    margin: auto;
+}
+
+#hero {
+    background-color: #4CAF50; /* Initial background color */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: background-color 1s; /* Smooth transition for background color */
+}
+
+section {
+    padding: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33.333% - 20px); /* Three cards per row with spacing */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+.card p {
+    padding: 0 10px;
+}
+
+.card iframe {
+    margin-top: 15px;
+}
+
+.card-buttons {
+    margin-top: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+@media (max-width: 1200px) {
+    .card {
+        flex-basis: calc(50% - 20px); /* Two cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: calc(100% - 20px); /* One card per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 50px 20px;
+    }
+}
